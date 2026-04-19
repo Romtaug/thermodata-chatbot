@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ThermoData Chatbot — Demo</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Outfit', system-ui, sans-serif;
+      background: linear-gradient(135deg, #FFF7ED 0%, #FEF3C7 100%);
+      min-height: 100vh;
+      padding: 60px 20px;
+      color: #1F2937;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    .badge {
+      display: inline-block;
+      background: #16A34A;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 38px;
+      color: #0B1A2F;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    .subtitle {
+      font-size: 18px;
+      color: #4B5563;
+      margin-bottom: 32px;
+    }
+    .card {
+      background: white;
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      margin-bottom: 16px;
+    }
+    .card h2 {
+      font-size: 20px;
+      color: #0B1A2F;
+      margin-bottom: 16px;
+    }
+    code {
+      display: block;
+      background: #0B1A2F;
+      color: #F5A623;
+      padding: 16px 20px;
+      border-radius: 10px;
+      font-family: 'SF Mono', Monaco, monospace;
+      font-size: 13px;
+      overflow-x: auto;
+      white-space: nowrap;
+      margin: 12px 0;
+    }
+    p { color: #4B5563; line-height: 1.6; margin-bottom: 12px; }
+    .arrow {
+      text-align: center;
+      font-size: 32px;
+      color: #E67E22;
+      margin: 16px 0;
+    }
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      color: #9CA3AF;
+      margin-top: 32px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">● SERVICE EN LIGNE</span>
+    <h1>ThermoData Chatbot</h1>
+    <p class="subtitle">Service de chat IA propulsé par Claude (Anthropic), avec fallback automatique vers <strong>contact@thermodata.fr</strong> en cas d'indisponibilité.</p>
+
+    <div class="card">
+      <h2>👉 Tester le chatbot</h2>
+      <p>Le widget est chargé sur cette page (regarde en bas à droite). Clique sur la bulle orange pour démarrer une conversation.</p>
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <div class="card">
+      <h2>📋 Pour l'embarquer sur thermodata.fr</h2>
+      <p>Ajoute cette ligne avant la balise <code style="display:inline;padding:2px 6px;background:#FEF3C7;color:#92400E;">&lt;/body&gt;</code> :</p>
+      <code>&lt;script src="https://thermodata-chatbot.netlify.app/chatbot.js" defer&gt;&lt;/script&gt;</code>
+      <p style="margin-top:16px;font-size:14px;">⚠️ Remplace <code style="display:inline;padding:2px 6px;background:#FEF3C7;color:#92400E;">thermodata-chatbot.netlify.app</code> par l'URL réelle de ton site Netlify (visible dans le dashboard Netlify).</p>
+    </div>
+
+    <p class="footer">© ThermoData · Service propulsé par Claude (Anthropic)</p>
+  </div>
+
+  <!-- Le widget se charge depuis le même domaine pour la demo -->
+  <script src="/chatbot.js" defer></script>
+</body>
+</html>

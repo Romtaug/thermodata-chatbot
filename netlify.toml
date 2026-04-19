@@ -1,0 +1,17 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+# Headers pour autoriser le chargement de chatbot.js depuis n'importe quel site
+[[headers]]
+  for = "/chatbot.js"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=300"
+    Content-Type = "application/javascript; charset=utf-8"
+
+# Page d'accueil = page de demo
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
