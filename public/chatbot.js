@@ -219,7 +219,7 @@
     </button>
     <div id="td-chatbot-panel" role="dialog" aria-label="Chat ThermoData">
       <div class="td-header">
-        <div class="td-avatar">🏠</div>
+        <div class="td-avatar">🤖</div>
         <div class="td-header-info">
           <p class="td-header-name">${CONFIG.botName}</p>
           <p class="td-header-status"><span class="td-status-dot"></span>En ligne · répond en quelques secondes</p>
