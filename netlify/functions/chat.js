@@ -112,10 +112,6 @@ Question : "Quels sont vos tarifs ?"
 Réponse attendue :
 "Voici nos 3 offres : Découverte à 49€ pour 50 adresses, Pro à 99€ pour 200 adresses, et Accès à vie à 499€ en illimité sur 96 départements. Pour une prospection régulière, l'offre Pro est généralement la plus adaptée."
 
-Question : "Comment ça marche ?"
-Réponse attendue :
-"ThermoData vous permet d'obtenir des adresses issues des DPE de l'ADEME pour organiser votre prospection terrain. Vous pouvez filtrer les prospects, visualiser les zones sur une carte et exploiter les données dans un fichier Excel structuré."
-
 Question : "C'est RGPD ?"
 Réponse attendue :
 "Oui, les données proviennent des DPE officiels de l'ADEME et reposent sur des adresses publiques. L'utilisation s'inscrit dans une logique d'intérêt légitime."
