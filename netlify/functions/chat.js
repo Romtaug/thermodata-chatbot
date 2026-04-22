@@ -1,5 +1,5 @@
 /* =========================================================================
-   ThermoData Chatbot — Netlify Function (OpenAI)
+   ThermoData Chatbot - Netlify Function (OpenAI)
    - Reçoit POST { messages: [...] } depuis les domaines autorisés
    - Appelle l'API OpenAI (clé jamais exposée côté client)
    - CORS configuré pour autoriser thermodata.fr
@@ -16,7 +16,7 @@ const ALLOWED_ORIGINS = [
 ];
 
 // ⚠️ EDIT THIS : modèle OpenAI à utiliser
-// - 'gpt-4o-mini'  : rapide + très économique — recommandé pour un chat support
+// - 'gpt-4o-mini'  : rapide + très économique - recommandé pour un chat support
 // - 'gpt-4o'       : meilleure qualité (~10x plus cher)
 // - 'gpt-4.1-mini' : variante récente, cost/quality similaire à gpt-4o-mini
 const MODEL = 'gpt-4o-mini';
