@@ -242,10 +242,11 @@
   document.body.appendChild(container);
 
   // ------------------ STATE ------------------
-  const messages = [];
-  let isOpen = false;
-  let isLoading = false;
-  let hasFailed = false;
+   const messages = [];
+   let isOpen = false;
+   let isLoading = false;
+   let hasFailed = false;
+   let hasShownWelcome = false;
 
   const toggle    = document.getElementById('td-chatbot-toggle');
   const panel     = document.getElementById('td-chatbot-panel');
@@ -312,17 +313,20 @@
     input.placeholder = "Chat indisponible - utilisez l'email";
   }
 
-  function openPanel() {
-    isOpen = true;
-    panel.classList.add('open');
-    toggle.classList.add('open');
-    if (badge) badge.style.display = 'none';
-    if (messages.length === 0) {
-      addMessage('bot', escapeHtml(CONFIG.welcomeMessage));
-      renderQuickReplies(CONFIG.quickReplies);
-    }
-    setTimeout(() => input.focus(), 100);
-  }
+   function openPanel() {
+     isOpen = true;
+     panel.classList.add('open');
+     toggle.classList.add('open');
+     if (badge) badge.style.display = 'none';
+   
+     if (!hasShownWelcome) {
+       addMessage('bot', escapeHtml(CONFIG.welcomeMessage));
+       renderQuickReplies(CONFIG.quickReplies);
+       hasShownWelcome = true;
+     }
+   
+     setTimeout(() => input.focus(), 100);
+   }
 
   function closePanel() {
     isOpen = false;
