@@ -1,5 +1,5 @@
 /* =========================================================================
-   ThermoData Chatbot Widget — version "service séparé"
+   ThermoData Chatbot Widget - version "service séparé"
    À héberger sur un site Netlify dédié (ex: thermodata-chatbot.netlify.app)
    et à embarquer sur thermodata.fr via :
      <script src="https://thermodata-chatbot.netlify.app/chatbot.js" defer></script>
@@ -304,12 +304,12 @@
       'error',
       `😕 Le chat est temporairement indisponible.<br><br>` +
       `Écrivez-nous à <a href="mailto:${CONFIG.contactEmail}?subject=${subject}">${CONFIG.contactEmail}</a> ` +
-      `— réponse sous 24h ouvrées.`,
+      `- réponse sous 24h ouvrées.`,
       true
     );
     sendBtn.disabled = true;
     input.disabled = true;
-    input.placeholder = "Chat indisponible — utilisez l'email";
+    input.placeholder = "Chat indisponible - utilisez l'email";
   }
 
   function openPanel() {
